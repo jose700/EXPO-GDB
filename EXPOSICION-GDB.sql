@@ -571,42 +571,7 @@ insert into DETALLE_MANTENIMIENTO values (6, 1028, 6);
 insert into DETALLE_MANTENIMIENTO values (7, 1033, 7);
 
 
-/*insert into DETALLE_VENTA values (15,1025,  2, 5);
-insert into DETALLE_VENTA values (16,1025,  3, 6);
-insert into DETALLE_VENTA values (17,1028,  1, 6);
-insert into DETALLE_VENTA values (18,1012,  1, 6);
-insert into DETALLE_VENTA values (19,1012,  1, 6);
-insert into DETALLE_VENTA values (20,1029,  2, 7);
-insert into DETALLE_VENTA values (21,1015,  2, 7);
-insert into DETALLE_VENTA values (22,1030,  2, 8);
-insert into DETALLE_VENTA values (23,1018,  3, 8);
-insert into DETALLE_VENTA values (24,1012,  1, 8);
-insert into DETALLE_VENTA values (25,1019,  2, 8);
-insert into DETALLE_VENTA values (26,1023,  2, 8);
-insert into DETALLE_VENTA values (27,1024,  1, 8);
-insert into DETALLE_VENTA values (28,1027,  1, 8);
-insert into DETALLE_VENTA values (29,1012,  1, 8);
-insert into DETALLE_VENTA values (30,1029,  2, 9);
-insert into DETALLE_VENTA values (31,1031,  1, 9);
-insert into DETALLE_VENTA values (32,1050,  2, 9);
-insert into DETALLE_VENTA values (33,1042,  3, 10);
-insert into DETALLE_VENTA values (34,1043,  3, 10);
-insert into DETALLE_VENTA values (35,1044,  1, 10);
-insert into DETALLE_VENTA values (36,1045,  1, 10);
-insert into DETALLE_VENTA values (37,1046,  2, 11);
-insert into DETALLE_VENTA values (38,1047,  1, 11);
-insert into DETALLE_VENTA values (39,1036,  1, 11);
-insert into DETALLE_VENTA values (40,1037,  2, 11);
-insert into DETALLE_VENTA values (41,1038,  2, 12);
-insert into DETALLE_VENTA values (42,1039,  3, 12);
-insert into DETALLE_VENTA values (43,1040,  4, 12);
-insert into DETALLE_VENTA values (44,1010,  2, 12);
-insert into DETALLE_VENTA values (45,1016,  1, 12);
-insert into DETALLE_VENTA values (46,1019,  1, 12);
-insert into DETALLE_VENTA values (47,1017,  2, 13);
-insert into DETALLE_VENTA values (48,1042,  4, 13);
-insert into DETALLE_VENTA values (49,1043,  2, 14);
-insert into DETALLE_VENTA values (50,1044,  1, 14);*/
+
 
 /*consulta todas las marcas de productos q se vendio x cada marca*/
 select 
