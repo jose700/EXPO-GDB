@@ -1,3 +1,4 @@
+
 /*consulta todas las marcas de productos q se vendio x cada marca*/
 select 
 ARTICULO.COD_ARTICULO as Código,
@@ -46,13 +47,14 @@ Nombre,
 Precio;
 /*clientes cuantos productos ha comprado*/
 
-select CLIENTE.CLIENTE_CEDULA as CEDULA,
+select CLIENTE.ID_CLIENTE as CEDULA,
 CLIENTE.CLIENTE_NOMBRES AS NOMBRE,
 CLIENTE.CLIENTES_APELLIDOS AS APELLIDOS,
 count(VENTA.COD_VENTA) as COMPRAS_TOTAL
 from PUBLIC.CLIENTE
-inner join VENTA on VENTA.CLIENTE_CEDULA=CLIENTE.CLIENTE_CEDULA
+inner join VENTA on VENTA.ID_CLIENTE=CLIENTE.ID_CLIENTE
 group by 
 CEDULA,
 NOMBRE,
 APELLIDOS;
+
