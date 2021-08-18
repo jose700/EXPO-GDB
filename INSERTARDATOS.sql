@@ -1,4 +1,6 @@
 /*INSERTAR DATOS*/
+INSERT INTO EMPRESA VALUES (1,'DANTE MOREIRA', 0987654321,'URBIRRIOS' );
+
 insert into ARTICULO values (1011, 'Tp-link Mini Wireless Wifi Adaptador Usb Wn823n 300mbps Pc', 18, 11.00);
 insert into ARTICULO values (1012, 'Parlante para PC NEXUS', 26, 6.25);
 insert into ARTICULO values (1013, 'Laptop Lenovo Slim, Amd A9, 14 pulg, 64gb, 4gb, bt, w10', 6, 425.00);
