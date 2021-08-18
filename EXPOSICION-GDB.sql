@@ -1,4 +1,17 @@
 /*==============================================================*/
+create table EMPRESA (
+
+COD_EMPRESA INT4 not null,
+
+NOMBRE_EMPRESA VARCHAR(100) not null,
+
+TELEFONO_EMPRESA INT4 not null,
+
+DIRECCION_EMPRESA VARCHAR(100) not null,
+
+constraint PK_EMPRESA primary key (COD_EMPRESA)
+
+);
 
 /* Table: ARTICULO */
 
