@@ -1,6 +1,6 @@
 /*INSERTAR DATOS*/
-INSERT INTO EMPRESA VALUES (1,'DANTE MOREIRA', 0987654321,'URBIRRIOS' );
 
+INSERT INTO EMPRESA VALUES (1,'DANTE MOREIRA', '0987654321','URBIRRIOS' );
 insert into ARTICULO values (1011, 'Tp-link Mini Wireless Wifi Adaptador Usb Wn823n 300mbps Pc', 18, 11.00);
 insert into ARTICULO values (1012, 'Parlante para PC NEXUS', 26, 6.25);
 insert into ARTICULO values (1013, 'Laptop Lenovo Slim, Amd A9, 14 pulg, 64gb, 4gb, bt, w10', 6, 425.00);
@@ -44,25 +44,25 @@ insert into ARTICULO values (1050, 'Tarjeta De Video Msi 1Gb N210 de Computadora
 
 /*INGRESO CLIENTES*/
 insert into CLIENTE values (1317548954, 'Dennis Snayder', 'Teran Avendaño', 'Calle 14 av. 20', 0958743397);
-insert into CLIENTE values (1722697441, 'Selena Nicole','Medina Reyes','Calle 15 av. 35',0978445012);
-insert into CLIENTE values (1701420570, 'Manuel Jose','Aveiga Loor','Calle universidad 9 av. universidad 4',0948756669);
-insert into CLIENTE values (1311328114, 'Fabian Leonardo','Delgado Marchan','Urbanización Ciudad del Sol',0998445255);
-insert into CLIENTE values (1697536715, 'Santiago Patricio','Bautista Alonzo','Calle 13 av. 17',0987597199);
-insert into CLIENTE values (1487741126, 'Alisson Katherine','Macias Tenelema','Calle 15 av. 24',0995937132);
-insert into CLIENTE values (1317925956, 'Alexander Jared','Mera Coba','Urbanización Cielito Lindo',0993938937);
-insert into CLIENTE values (1154779629, 'Joselyn Alessa','Anchundia Moreira','Calle 308 av. 239B',0981640094);
-insert into CLIENTE values (1784987441, 'Roberth Xavier','Chavez Conforme','Calle 122 av. 102',0996853524);
-insert into CLIENTE values (1317915842, 'Ariana Valentina','Huerta Santana','Calle 109 av. 111',0988997615);
-insert into CLIENTE values (1177852487, 'Sophia Carolina','Rojas Mendoza','Calle 4 av. 11',0997689029);
-insert into CLIENTE values (1549997452, 'Adriana Anahi','Flores Cevallos','Calle 10 av. 10',0962610603);
-insert into CLIENTE values (1309873279, 'Alanys Gissella','Alarcon Pico','Urbanización Manta Azul',0999189541);
-insert into CLIENTE values (1348789954, 'Geovanny Andres','Alcivar Solorzano','Calle 17-B av. 30',0983177115);
-insert into CLIENTE values (1124478965, 'Karen Denisse','Giler Ponce','Cdla. La Aurora Mz. F villa 12',0967616386);
-insert into CLIENTE values (1458749961, 'Vielka Yamileth','Tauriz Rivera','Miraflores calle 9 de Octubre',0963280234);
-insert into CLIENTE values (1314874168, 'Jordy Vicente','Rodriguez Garcia','Calle 114 av. 113',0997295053);
-insert into CLIENTE values (1317818220, 'Victoria Luciana','Espin Intriago','Altagracia calle T1',0967143732);
-insert into CLIENTE values (1317915666, 'Tania Jazmin','Zambrano Burgos','San Pedro calle 310 av. 207',0997455841);
-insert into CLIENTE values (1719230342, 'Carlos Paul','Peñafiel Palma','Porvenir calle 297 av. 207',0996399073);
+insert into CLIENTE values (1, 'Selena Nicole','Medina Reyes','Calle 15 av. 35',0978445012);
+insert into CLIENTE values (2, 'Manuel Jose','Aveiga Loor','Calle universidad 9 av. universidad 4',0948756669);
+insert into CLIENTE values (3, 'Fabian Leonardo','Delgado Marchan','Urbanización Ciudad del Sol',0998445255);
+insert into CLIENTE values (4, 'Santiago Patricio','Bautista Alonzo','Calle 13 av. 17',0987597199);
+insert into CLIENTE values (5, 'Alisson Katherine','Macias Tenelema','Calle 15 av. 24',0995937132);
+insert into CLIENTE values (6, 'Alexander Jared','Mera Coba','Urbanización Cielito Lindo',0993938937);
+insert into CLIENTE values (7, 'Joselyn Alessa','Anchundia Moreira','Calle 308 av. 239B',0981640094);
+insert into CLIENTE values (8, 'Roberth Xavier','Chavez Conforme','Calle 122 av. 102',0996853524);
+insert into CLIENTE values (9, 'Ariana Valentina','Huerta Santana','Calle 109 av. 111',0988997615);
+insert into CLIENTE values (10, 'Sophia Carolina','Rojas Mendoza','Calle 4 av. 11',0997689029);
+insert into CLIENTE values (11, 'Adriana Anahi','Flores Cevallos','Calle 10 av. 10',0962610603);
+insert into CLIENTE values (12, 'Alanys Gissella','Alarcon Pico','Urbanización Manta Azul',0999189541);
+insert into CLIENTE values (13, 'Geovanny Andres','Alcivar Solorzano','Calle 17-B av. 30',0983177115);
+insert into CLIENTE values (14, 'Karen Denisse','Giler Ponce','Cdla. La Aurora Mz. F villa 12',0967616386);
+insert into CLIENTE values (15, 'Vielka Yamileth','Tauriz Rivera','Miraflores calle 9 de Octubre',0963280234);
+insert into CLIENTE values (16, 'Jordy Vicente','Rodriguez Garcia','Calle 114 av. 113',0997295053);
+insert into CLIENTE values (17, 'Victoria Luciana','Espin Intriago','Altagracia calle T1',0967143732);
+insert into CLIENTE values (18, 'Tania Jazmin','Zambrano Burgos','San Pedro calle 310 av. 207',0997455841);
+insert into CLIENTE values (19, 'Carlos Paul','Peñafiel Palma','Porvenir calle 297 av. 207',0996399073);
 /*INGRESO TIPO_EMPLEADO*/
 insert into TIPO_EMPLEADO values (1, 'VENDEDOR');
 insert into TIPO_EMPLEADO values (2, 'TECNICO');
@@ -124,25 +124,25 @@ insert into LOTE values (30, 6, '07/12/2020', 7800.00);
 
 
 /*INGRESO VENTAS*/
-insert into VENTA values (18, 1317548954, 1, 122.00);
-insert into VENTA values (19, 1722697441, 2, 103.64);
-insert into VENTA values (20, 1701420570, 3, 209.00);
-insert into VENTA values (21, 1311328114, 4, 442.25);
-insert into VENTA values (22, 1697536715, 5, 879.00);
-insert into VENTA values (23, 1487741126, 6, 246.99);
-insert into VENTA values (24, 1317925956, 7, 548.00);
-insert into VENTA values (25, 1154779629, 8, 123.79);
-insert into VENTA values (26, 1784987441, 9, 216.96);
-insert into VENTA values (27, 1317915842, 10, 586.61);
-insert into VENTA values (28, 1177852487, 11, 520.27);
-insert into VENTA values (29, 1549997452, 12, 103.46);
-insert into VENTA values (30, 1309873279, 13, 161.10);
-insert into VENTA values (31, 1348789954, 14, 325.90);
-insert into VENTA values (32, 1311328114, 4, 442.25);
-insert into VENTA values (33, 1784987441, 9, 216.96);
-insert into VENTA values (34, 1311328114, 4, 442.25);
-insert into VENTA values (35, 1722697441, 2, 103.64);
-insert into VENTA values (36, 1722697441, 2, 103.64);
+insert into VENTA values (18, 1, 1, 122.00);
+insert into VENTA values (19, 2, 2, 103.64);
+insert into VENTA values (20, 3, 3, 209.00);
+insert into VENTA values (21, 4, 4, 442.25);
+insert into VENTA values (22, 5, 5, 879.00);
+insert into VENTA values (23, 6, 6, 246.99);
+insert into VENTA values (24, 7, 7, 548.00);
+insert into VENTA values (25, 8, 8, 123.79);
+insert into VENTA values (26, 9, 9, 216.96);
+insert into VENTA values (27, 10, 10, 586.61);
+insert into VENTA values (28, 11, 11, 520.27);
+insert into VENTA values (29, 12, 12, 103.46);
+insert into VENTA values (30, 13, 13, 161.10);
+insert into VENTA values (31, 14, 14, 325.90);
+insert into VENTA values (32, 15, 4, 442.25);
+insert into VENTA values (33, 16, 9, 216.96);
+insert into VENTA values (34, 17, 4, 442.25);
+insert into VENTA values (35, 18, 2, 103.64);
+insert into VENTA values (36, 19, 2, 103.64);
 
 /*INGRESO DETALLE_VENTA*/
 insert into DETALLE_VENTA values (1,1011,  2, 18);
@@ -162,13 +162,13 @@ insert into DETALLE_VENTA values (14,1023,  4, 31);
 
 
 /*INGRESO MANTENIMIENTO*/
-insert into MANTENIMIENTO values (1, 9, 1719230342, '14/09/2020', '24/09/2020', 'Si', '5SR5F6R5G4R64E', ' Defectuoso', 99.00, 'Revisión total de equipo');
-insert into MANTENIMIENTO values (2, 10, 1317915666, '22/09/2020', '01/10/2020', 'No', '4FE54FEAF8FE48', 'No enciende', 25.00, 'Cambio de bateria');
-insert into MANTENIMIENTO values (3, 11, 1317818220, '06/10/2020', '16/11/2020', 'Si', 'HH82AC84AA200A', 'Impresora con fallas', 80.00, 'Cambio de tinta');
-insert into MANTENIMIENTO values (4, 12, 1314874168, '29/10/2020', '08/11/2020', 'Sí', '9EW89W2E2E00E6', 'Daño de disco duro', 150.00, 'Cambio de disco duro');
-insert into MANTENIMIENTO values (5, 13, 1458749961, '25/11/2020', '05/12/2020', 'No', 'F6W5W59FCZ6203', 'Defectuoso', 25.00, 'Cambio de pantalla');
-insert into MANTENIMIENTO values (6, 14, 1124478965, '27/11/2020', '07/12/2020', 'No', 'E94R12T5Z320C0', 'Procesador quemado', 25.00, 'Cambio de procesador');
-insert into MANTENIMIENTO values (7, 12, 1348789954, '29/11/2020', '09/12/2020', 'No', '48668SC688SDE8', 'Defectuoso', 25.00, 'Cambio de enfriador');
+insert into MANTENIMIENTO values (1, 9, 1, '14/09/2020', '24/09/2020', 'Si', '5SR5F6R5G4R64E', ' Defectuoso', 99.00, 'Revisión total de equipo');
+insert into MANTENIMIENTO values (2, 10, 2, '22/09/2020', '01/10/2020', 'No', '4FE54FEAF8FE48', 'No enciende', 25.00, 'Cambio de bateria');
+insert into MANTENIMIENTO values (3, 11, 3, '06/10/2020', '16/11/2020', 'Si', 'HH82AC84AA200A', 'Impresora con fallas', 80.00, 'Cambio de tinta');
+insert into MANTENIMIENTO values (4, 12, 4, '29/10/2020', '08/11/2020', 'Sí', '9EW89W2E2E00E6', 'Daño de disco duro', 150.00, 'Cambio de disco duro');
+insert into MANTENIMIENTO values (5, 13, 5, '25/11/2020', '05/12/2020', 'No', 'F6W5W59FCZ6203', 'Defectuoso', 25.00, 'Cambio de pantalla');
+insert into MANTENIMIENTO values (6, 14, 6, '27/11/2020', '07/12/2020', 'No', 'E94R12T5Z320C0', 'Procesador quemado', 25.00, 'Cambio de procesador');
+insert into MANTENIMIENTO values (7, 12, 7, '29/11/2020', '09/12/2020', 'No', '48668SC688SDE8', 'Defectuoso', 25.00, 'Cambio de enfriador');
 
 /*INGRESO DETALLE_MANTENIMIENTO*/
 insert into DETALLE_MANTENIMIENTO values (1, 1042, 1);
