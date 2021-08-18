@@ -1,6 +1,17 @@
-
-
 /*==============================================================*/
+create table EMPRESA (
+
+COD_EMPRESA INT4 not null,
+
+NOMBRE_EMPRESA VARCHAR(100) not null,
+
+TELEFONO_EMPRESA VARCHAR(100) not null,
+
+DIRECCION_EMPRESA VARCHAR(100) not null,
+
+constraint PK_EMPRESA primary key (COD_EMPRESA)
+
+);
 
 /* Table: ARTICULO */
 
@@ -30,7 +41,7 @@ constraint PK_ARTICULO primary key (COD_ARTICULO)
 
 create table CLIENTE (
 
-CLIENTE_CEDULA INT4 not null,
+ID_CLIENTE INT4 not null,
 
 CLIENTE_NOMBRES VARCHAR(30) not null,
 
@@ -40,7 +51,7 @@ CLIENTE_DIRECCION VARCHAR(100) not null,
 
 CLIENTE_TELEFONO INT4 not null,
 
-constraint PK_CLIENTE primary key (CLIENTE_CEDULA)
+constraint PK_CLIENTE primary key (ID_CLIENTE)
 
 );
 
@@ -176,7 +187,7 @@ COD_MANTENIMIENTO INT4 not null,
 
 COD_EMPLEADO INT4 null,
 
-CLIENTE_CEDULA INT4 null,
+ID_CLIENTE INT4 null,
 
 MANTENIMIENTO_FECHA_INGRESO DATE not null,
 
@@ -254,7 +265,7 @@ create table VENTA (
 
 COD_VENTA INT4 not null,
 
-CLIENTE_CEDULA INT4 null,
+ID_CLIENTE INT4 null,
 
 COD_EMPLEADO INT4 null,
 
@@ -287,8 +298,11 @@ on delete restrict on update restrict;
 
 
 /*alter table DETALLE_MANTENIMIENTO
+
 add constraint FK_DETALLE__DETALLE_M_ARTICULO foreign key (COD_ARTICULO)
+
 references ARTICULO (COD_ARTICULO)
+
 on delete restrict on update restrict;
 */
 
@@ -355,9 +369,9 @@ on delete restrict on update restrict;
 
 alter table MANTENIMIENTO
 
-add constraint FK_MANTENIM_RELATIONS_CLIENTE foreign key (CLIENTE_CEDULA)
+add constraint FK_MANTENIM_RELATIONS_CLIENTE foreign key (ID_CLIENTE)
 
-references CLIENTE (CLIENTE_CEDULA)
+references CLIENTE (ID_CLIENTE)
 
 on delete restrict on update restrict;
 
@@ -365,9 +379,9 @@ on delete restrict on update restrict;
 
 alter table VENTA
 
-add constraint FK_VENTA_RELATIONS_CLIENTE foreign key (CLIENTE_CEDULA)
+add constraint FK_VENTA_RELATIONS_CLIENTE foreign key (ID_CLIENTE)
 
-references CLIENTE (CLIENTE_CEDULA)
+references CLIENTE (ID_CLIENTE)
 
 on delete restrict on update restrict;
 
@@ -380,7 +394,6 @@ add constraint FK_VENTA_RELATIONS_EMPLEADO foreign key (COD_EMPLEADO)
 references EMPLEADO (COD_EMPLEADO)
 
 on delete restrict on update restrict;
-
 
 
 
