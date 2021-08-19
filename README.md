@@ -1,1 +1,1 @@
-create database EXPOSICION();
+create database SEGUNDO-PARCIAL();
