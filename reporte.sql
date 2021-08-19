@@ -1,0 +1,52 @@
+/*consulta todas las marcas de productos q se vendio x cada marca*/
+select 
+EMPRESA.COD_EMPRESA as Id_Empresa,
+EMPRESA.NOMBRE_EMPRESA as Empresa,
+EMPRESA.DIRECCION_EMPRESA as Direccion_Empresa,
+EMPRESA.TELEFONO_EMPRESA as Telefono_Empresa,
+ARTICULO.COD_ARTICULO as Código,
+ARTICULO.ARTICULOS_NOMBRE as Nombre,
+ARTICULO.ARTICULOS_PRECIO as Precio,
+sum(DETALLE_VENTA.COD_CANTIDAD) as Articulos_Vendidos
+from ARTICULO
+inner join DETALLE_VENTA on DETALLE_VENTA.COD_ARTICULO=ARTICULO.COD_ARTICULO
+inner join EMPRESA on EMPRESA.COD_EMPRESA = EMPRESA.COD_EMPRESA
+group by 
+Id_Empresa,
+Empresa,
+Direccion_Empresa,
+Telefono_Empresa,
+Código,
+Nombre,
+Precio;
+
+
+select 
+EMPRESA.COD_EMPRESA as Id_Empresa,
+EMPRESA.NOMBRE_EMPRESA as Empresa,
+EMPRESA.DIRECCION_EMPRESA as Direccion_Empresa,
+EMPRESA.TELEFONO_EMPRESA as Telefono_Empresa,
+EMPLEADO.EMPLEADO_NOMBRES AS NOMBRE_Empleado,
+EMPLEADO.EMPLEADO_APELLIDOS AS Apellido_Empleado,
+EMPLEADO.EMPLEADO_direccion AS Direccion_Empleado,
+ARTICULO.COD_ARTICULO as Código,
+ARTICULO.ARTICULOS_NOMBRE as Nombre,
+ARTICULO.ARTICULOS_PRECIO as Precio,
+sum(DETALLE_VENTA.COD_CANTIDAD) as Articulos_Vendidos,
+SUM(DETALLE_VENTA.COD_CANTIDAD*ARTICULO.ARTICULOS_PRECIO) AS TOTAL
+from ARTICULO
+inner join DETALLE_VENTA on DETALLE_VENTA.COD_ARTICULO=ARTICULO.COD_ARTICULO
+INNER JOIN EMPLEADO ON EMPLEADO.COD_EMPLEADO = EMPLEADO.COD_EMPLEADO
+inner join EMPRESA on EMPRESA.COD_EMPRESA = EMPRESA.COD_EMPRESA
+group by 
+Id_Empresa,
+Empresa,
+Direccion_Empresa,
+Telefono_Empresa,
+NOMBRE_Empleado,
+Apellido_Empleado,
+Direccion_Empleado,
+Código,
+Nombre,
+Precio;
+
