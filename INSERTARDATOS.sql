@@ -43,7 +43,6 @@ insert into ARTICULO values (1049, 'Procesador Intel Core I5-7400 3.0 Ghz 6Mb Lg
 insert into ARTICULO values (1050, 'Tarjeta De Video Msi 1Gb N210 de Computadoras', 5, 61.61);
 
 /*INGRESO CLIENTES*/
-insert into CLIENTE values (1317548954, 'Dennis Snayder', 'Teran Avendaño', 'Calle 14 av. 20', 0958743397);
 insert into CLIENTE values (1, 'Selena Nicole','Medina Reyes','Calle 15 av. 35',0978445012);
 insert into CLIENTE values (2, 'Manuel Jose','Aveiga Loor','Calle universidad 9 av. universidad 4',0948756669);
 insert into CLIENTE values (3, 'Fabian Leonardo','Delgado Marchan','Urbanización Ciudad del Sol',0998445255);
